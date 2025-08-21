@@ -1,10 +1,30 @@
-langchain>=1.0.0
-chromadb==0.4.3
-duckdb>=0.7.1
-openai>=1.5.0
-PyPDF2>=3.0.0
-sentence-transformers>=2.2.0
-numpy
-pandas
+
+# Streamlit
 streamlit==1.41.1
 rich<14,>=10.14.0
+
+# LangChain
+langchain==0.1.97  # 根据你当前代码使用的版本调整
+
+# OpenAI
+openai==0.27.13  # 根据最新 API 兼容性
+
+# 数据处理
+pandas==2.1.1
+numpy==1.26.4
+
+# 文本处理/嵌入
+tiktoken==0.4.0
+sentence-transformers==2.2.2
+
+# Markdown/富文本渲染
+markdown-it-py==2.2.0
+mdurl==0.1.2
+pygments==2.19.2
+
+# 可选（如果你有可视化或图表需求）
+matplotlib==3.8.0
+seaborn==0.12.3
+
+# 其他常用依赖
+requests==2.31.0
