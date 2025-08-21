@@ -1,20 +1,7 @@
-# Streamlit 版本锁定，保证 rich 兼容
 streamlit==1.41.1
-
-# Python Markdown 渲染
+rich<14,>=10.14.0
+langchain==0.1.227   # 确保在 Python 3.11/3.10 下可安装
+openai==0.27.10
 markdown-it-py==3.0.0
 mdurl==0.1.2
 pygments==2.19.2
-
-# LangChain 和 OpenAI 客户端
-langchain==0.1.227
-openai==0.27.10
-
-# HuggingFace Transformers（如果你用本地模型）
-transformers==4.34.0
-sentence-transformers==2.2.2
-
-# 其他可能用到的工具
-numpy==1.26.0
-pandas==2.1.1
-torch==2.1.0
