@@ -6,19 +6,23 @@ import time
 import uuid
 import shutil
 import os
-import streamlit as st
 import re
-# from langchain_openai import ChatOpenAI
-from langchain.chat_models import ChatOpenAI
+import streamlit as st
+
+# LangChain 相关
+from langchain_openai import ChatOpenAI          # Chat 模型
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.embeddings import OpenAIEmbeddings  # Embeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain.schema import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+# PDF 处理
 from PyPDF2 import PdfReader
 import openai
-from langchain_openai import ChatOpenAI
+
+# Streamlit 页面辅助
 from streamlit_extras.switch_page_button import switch_page
 from st_pages import Page, Section, show_pages, add_indentation
 
