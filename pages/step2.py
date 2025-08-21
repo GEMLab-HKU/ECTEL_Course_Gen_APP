@@ -1,19 +1,25 @@
 import streamlit as st
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain.prompts import PromptTemplate
-from langchain.chains import RetrievalQA
-from langchain.schema import Document
-from langchain_openai import ChatOpenAI
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from PyPDF2 import PdfReader
 import shutil
 import os
 import time
 import uuid
 
+# LangChain 相关
+from langchain_community.vectorstores import Chroma
+from langchain_community.embeddings import OpenAIEmbeddings  # 已切换到 langchain-community
+from langchain.prompts import PromptTemplate
+from langchain.chains import RetrievalQA
+from langchain.schema import Document
+from langchain_openai import ChatOpenAI  # 已切换到 langchain-openai
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+# PDF 处理
+from PyPDF2 import PdfReader
+
+# Streamlit 页面辅助
 from streamlit_extras.switch_page_button import switch_page
 from st_pages import Page, Section, show_pages, add_indentation
+
 
 add_indentation()
 
